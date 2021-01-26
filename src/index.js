@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BroContextProvider } from './context/context-brochures';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BroContextProvider>
+      <App />
+    </BroContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

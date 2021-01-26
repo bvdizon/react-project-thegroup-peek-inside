@@ -5,9 +5,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #40e0cf;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+}
+
+.underline {
+  width: 80px;
+  margin: 30px auto;
+  height: 3px;
+  background-color: #94380d;
+}
+
+/* brochure single styles */
+.brochure-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #e07441;
+  padding: 10px 15px;
+  color: #fff;
+
+  transition: all ease-in-out 0.1s;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
