@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BroContext } from '../context/context-brochures';
+import Loading from './Loading';
 
 const BroList = () => {
-  const { brochures } = useContext(BroContext);
+  const { brochures, isLoading } = useContext(BroContext);
 
   return (
     <div>
+      {isLoading && <Loading />}
       {brochures &&
         brochures.map((bro) => {
           console.log(bro.gsx$active.$t);
