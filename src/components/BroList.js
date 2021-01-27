@@ -18,7 +18,6 @@ const BroList = () => {
               <div key={bro.gsx$property.$t} className='brochure-item'>
                 <h3>{bro.gsx$property.$t}</h3>
                 <Link to={`/view/${bro.gsx$alias.$t}`} className='btn'>
-                  {' '}
                   View Brochure
                 </Link>
               </div>

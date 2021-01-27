@@ -14,10 +14,12 @@ const Brochure = () => {
     <div
       className='brochure-container'
       style={{ width: '100%', height: '100vh' }}>
-      <iframe
-        src={broSingle.gsx$url.$t}
-        frameborder='0'
-        style={{ width: '100%', height: '100%' }}></iframe>
+      {broSingle && (
+        <iframe
+          src={broSingle.gsx$url.$t}
+          frameborder='0'
+          style={{ width: '100%', height: '100%' }}></iframe>
+      )}
     </div>
   );
 };
