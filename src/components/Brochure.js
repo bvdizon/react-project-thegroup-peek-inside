@@ -16,6 +16,7 @@ const Brochure = () => {
       style={{ width: '100%', height: '100vh' }}>
       {broSingle && (
         <iframe
+          title={broSingle.gsx$property.$t}
           src={broSingle.gsx$url.$t}
           frameborder='0'
           style={{ width: '100%', height: '100%' }}></iframe>

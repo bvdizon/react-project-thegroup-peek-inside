@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Loading from '../components/Loading';
 
 const gsheetID = '1z-rXlasV9g2PerZz8uiVtuCEmY192U0LyJA3oWyo9i8';
 const gsheetNum = '10';
